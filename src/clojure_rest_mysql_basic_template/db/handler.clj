@@ -23,10 +23,11 @@
 
 (defn handle-a-product [req]
   (let [ds (:clojure-rest-mysql-basic-template/ds req)
-        id (get-in req [:params "id"])
-        name (get-in req [:params "name"])
+        ; id (get-in req [:params "id"])
+        ; name (get-in req [:params "name"])
         price (get-in req [:params "price"])
-        selected-product (read-a-product ds id name price)]
+        ; selected-product (read-a-product ds id name price)
+        selected-product (read-a-product ds price)]
     {:status 200
      :headers {}
     ;  :body (str products)}))
