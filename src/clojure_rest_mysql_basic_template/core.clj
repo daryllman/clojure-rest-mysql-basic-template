@@ -1,4 +1,5 @@
 (ns clojure-rest-mysql-basic-template.core
+  (:gen-class)
   (:require [clojure-rest-mysql-basic-template.db.model :as products]
             [clojure-rest-mysql-basic-template.db.handler :refer [handle-all-products
                                                                   handle-create-product
@@ -57,8 +58,10 @@
   (products/create-table ds)
   (jetty/run-jetty app {:port (Integer. 8000)}))
 
-(defn -dev-main []
-  (products/create-table ds)
-  (jetty/run-jetty (wrap-reload #'app) {:port (Integer. 8000)}))
+
+;;; For development
+; (defn -dev-main []
+;   (products/create-table ds)
+;   (jetty/run-jetty (wrap-reload #'app) {:port (Integer. 8000)}))
 
 
