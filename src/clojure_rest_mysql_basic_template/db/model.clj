@@ -32,7 +32,7 @@
                       CREATE TABLE IF NOT EXISTS products (
                       id char(4),
                       name varchar(255),
-                      price varchar(5),
+                      price varchar(5)
                       )"])
   (println "Created products Table")
   (load-sample-data ds)

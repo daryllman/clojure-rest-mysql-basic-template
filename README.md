@@ -12,7 +12,7 @@ Basic template to run a REST server with Ring Clojure, serving MySQL database, o
 ## Installation
 
 ```
-git clone https://github.com/daryllman/clojure-rest-mysql-basic-template
+git clone https://github.com/daryllman/clojure-rest-mysql-basic-template-basic-template
 ```
 
 ## Usage
