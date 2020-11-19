@@ -1,0 +1,24 @@
+// Variables
+@hostname = http://localhost
+@port = 8000
+
+###
+// Root
+GET {{hostname}}:{{port}} HTTP/1.1
+
+###
+// To retrieve all products
+GET {{hostname}}:{{port}}/products HTTP/1.1
+
+###
+// To retrieve all products with price=99
+POST {{hostname}}:{{port}}/product?price=99 HTTP/1.1
+
+###
+// Create a product
+// id: 9999
+// name: 'MJ Air Jordans'
+// price: 210
+POST {{hostname}}:{{port}}/products?id=9998&name=MJ Air Jordans2&price=99 HTTP/1.1
+
+###
