@@ -1,32 +1,39 @@
-# clojure-rest-mysql-basic-template
+# Clojure Rest MySQL Basic Template
 
-FIXME: description
+Basic template to run a REST server with Ring Clojure, serving MySQL database, on clojure environment
+
+## Clojure libraries used
+
+- [Ring](https://github.com/ring-clojure/ring)
+- [Compojure](https://github.com/weavejester/compojure)
+- [Next-JDBC](https://github.com/seancorfield/next-jdbc)
+- [Clojure Data](https://github.com/clojure/data.json)
 
 ## Installation
 
-Download from http://example.com/FIXME.
+```
+git clone https://github.com/daryllman/clojure-rest-mysql-basic-template
+```
 
 ## Usage
 
-FIXME: explanation
+### 1. Compile to an UberJAR file
 
-    $ java -jar clojure-rest-mysql-basic-template-0.1.0-standalone.jar [args]
+```
+lein uberjar
+```
 
-## Options
+This will create 2 uberjar files in /target/uberjar
 
-FIXME: listing of options this app accepts.
+### 2. Run UberJAR file with java
 
-## Examples
+```
+java -jar target\uberjar\clojure-rest-basic-template-0.1.0-SNAPSHOT-standalone.jar [args]
+```
 
-...
+### 3. Check if its working
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Go to [http://localhost:8000](). If everything looks good, all is working fine.
 
 ## License
 
