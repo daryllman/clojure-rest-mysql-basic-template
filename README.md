@@ -28,12 +28,20 @@ This will create 2 uberjar files in /target/uberjar
 ### 2. Run UberJAR file with java
 
 ```
-java -jar target\uberjar\clojure-rest-basic-template-0.1.0-SNAPSHOT-standalone.jar [args]
+java -jar target\uberjar\clojure-rest-mysql-basic-template-0.1.0-SNAPSHOT-standalone.jar [args]
 ```
 
-### 3. Check if its working
+### 3. Check if REST Server is working
 
 Go to [http://localhost:8000](). If everything looks good, all is working fine.
+
+### 4. Check MySQL Database is working
+
+See the sample http client calls created under /api-calls/client-api-calls.http  
+Just an example:  
+[http://localhost:8000/products]()
+
+---
 
 ## License
 
