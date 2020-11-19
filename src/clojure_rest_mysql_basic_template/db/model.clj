@@ -58,6 +58,6 @@
 
 
 ; Read products of a price
-(defn read-a-review [ds price]
+(defn read-a-product [ds price]
   (println "Reading products of a price - " price)
   (jdbc/execute! ds ["SELECT * from products WHERE price=?" price]))
