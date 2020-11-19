@@ -1,4 +1,4 @@
-(defproject clojure-rest-mysql-basic-template-basic-template "0.1.0-SNAPSHOT"
+(defproject clojure-rest-mysql-basic-template "0.1.0-SNAPSHOT"
   :description "Basic template to run a REST server with Ring Clojure, serving MySQL database, on clojure environment"
   :url "http://example.com/FIXME"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
